@@ -28,7 +28,9 @@ header div {
 .search__box:hover {
   border-bottom: 2px solid #e97f03;
 }
-
+.search__box input::placeholder {
+  color: rgb(50, 50, 50);
+}
 .header_search:hover {
   filter: invert(91%) sepia(12%) saturate(7307%) hue-rotate(324deg)
     brightness(100%) contrast(98%);
