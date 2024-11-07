@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/product_in.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="search__box">
+        <img src="img/search.svg" alt="Search" class="header_search" />
+        <input placeholder="Search products" />
+      </div>
+      <div class="item__box">
+        <img src="img/cart.svg" alt="Cart" class="header_cart" />
+        <img src="img/user.svg" alt="Userpage" class="header_userpage" />
+      </div>
+    </header>
+    <main>
+      <div class="product__content">
+        <div class="product__preview">
+          <img src="img/product.png" alt="Product" />
+        </div>
+        <div class="product__description">
+          <div class="product__title">G Home</div>
+          <div class="product__title_descr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            ultrices ante sit amet mollis luctus. Morbi semper, tellus in
+            finibus tristique, purus odio sodales sem, vitae dignissim enim
+            metus vel purus. Quisque a rutrum leo. Phasellus quis ex sed magna
+            finibus convallis varius luctus justo. Nullam et sapien vel magna
+            ultrices pulvinar. Nunc felis ante, lobortis eget imperdiet in,
+            iaculis at justo. Etiam libero nisl, hendrerit vitae ultricies
+            vitae, pharetra a est. Vivamus vestibulum quam sit amet facilisis
+            consequat. Curabitur sollicitudin arcu arcu, pretium aliquam nibh
+            hendrerit a. Donec diam massa, tempus sed pulvinar a, fermentum et
+            orci.
+          </div>
+          <div class="product__details">Details</div>
+          <div class="product__details_descr">
+            Nulla et mauris sed elit semper pretium a quis augue. Fusce tempus
+            est ex, eu porttitor nulla auctor et. Maecenas eget quam non risus
+            porta elementum. Pellentesque posuere augue in malesuada fermentum.
+            Maecenas vitae viverra mauris. Suspendisse a cursus libero.
+            Pellentesque vitae purus eget lectus lobortis laoreet sed
+            sollicitudin diam. Pellentesque pellentesque eu justo at
+            ullamcorper. Quisque quis egestas magna. Vestibulum et felis id nisi
+            dapibus viverra vel vitae nisl. Morbi lobortis nunc turpis, sed
+            tincidunt quam cursus nec. Morbi eget lorem dolor.
+          </div>
+          <div class="product__buy">
+            <div class="product__price">$129</div>
+            <div class="product__btns cart__group">
+              <button>-</button><input type="number" value="1" /><button>
+                +
+              </button>
+            </div>
+            <button class="product__cart cart__group">Add to cart</button>
+            <img
+              class="item__favorite"
+              src="./img/favorite.svg"
+              alt="favorite_heart"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

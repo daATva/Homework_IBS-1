@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+* {
+  transition: 0.2s;
+}
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 24px;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid white;
+}
+.search__box {
+  width: 300px;
+  height: 40px;
+  position: relative;
+}
+.search__box:hover {
+  border-bottom: 2px solid #e97f03;
+}
+
+.header_search:hover {
+  filter: invert(91%) sepia(12%) saturate(7307%) hue-rotate(324deg)
+    brightness(100%) contrast(98%);
+}
+header input {
+  border: 0;
+  height: 16px;
+  color: black;
+}
+
+header input:focus {
+  outline: none;
+}
+header input:focus + .i_div {
+  visibility: visible;
+  border-bottom: 2px solid #e97f03;
+}
+header input::placeholder {
+  font-weight: bold;
+}
+header button {
+  background: none;
+  border: none;
+}
+header img {
+  width: 20px;
+  height: 20px;
+}
+.header_search {
+  width: 17.5px;
+  height: 17.5px;
+  margin-right: 11.5px;
+}
+.header_cart {
+  margin-right: 21px;
+}
+header img:hover {
+  filter: invert(91%) sepia(12%) saturate(7307%) hue-rotate(324deg)
+    brightness(100%) contrast(98%);
+}
+
+/* Main */
+.catalog__group {
+  display: flex;
+  justify-content: center;
+  padding: 0px 16px;
+  flex-wrap: wrap;
+}
+
+.catalog__item {
+  flex: 0 0 220px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.item__group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  height: 272px;
+}
+
+.item__group:hover {
+  background: #f2f2f2;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  -o-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.item__favorite {
+  cursor: pointer;
+}
+
+.heart-outline {
+  display: inline;
+  transition: display 0.2s;
+}
+
+.heart-filled {
+  display: none;
+  transition: display 0.2s;
+}
+.item__favorite {
+  align-self: flex-end;
+  padding: 0px 8px;
+}
+.favorite-active .heart-outline {
+  display: none;
+}
+
+.favorite-active .heart-filled {
+  display: inline;
+}
+
+.item__image {
+  padding: 38px 0px;
+}
+.item__titlle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  height: 40px;
+}
+.item__price {
+  height: 20px;
+  width: 100%;
+  color: #545454;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16.4px;
+  font-weight: 400;
+  padding: 0px 0px 24px 0px;
+}
+@media screen and (max-width: 576px) {
+  .catalog__item {
+    flex: 0 0 155px;
+  }
+}
