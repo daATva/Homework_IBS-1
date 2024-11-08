@@ -51,6 +51,14 @@ header input:focus + .i_div {
 header input::placeholder {
   font-weight: bold;
 }
+.header_search {
+  fill: #323232;
+}
+
+/* Изменение цвета SVG при фокусе на input */
+.search__box input:focus + .header_search {
+  fill: #e97f03; /* Новый цвет */
+}
 header button {
   background: none;
   border: none;
