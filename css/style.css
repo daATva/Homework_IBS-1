@@ -11,7 +11,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 24px;
 }
 
@@ -28,7 +27,9 @@ header div {
 .search__box:hover {
   border-bottom: 2px solid #e97f03;
 }
-
+.search__box input::placeholder {
+  color: rgb(50, 50, 50);
+}
 .header_search:hover {
   filter: invert(91%) sepia(12%) saturate(7307%) hue-rotate(324deg)
     brightness(100%) contrast(98%);
@@ -46,9 +47,11 @@ header input:focus + .i_div {
   visibility: visible;
   border-bottom: 2px solid #e97f03;
 }
-header input::placeholder {
-  font-weight: bold;
+
+.search__box:focus-within .header_search path {
+  fill: #e97f03;
 }
+
 header button {
   background: none;
   border: none;
@@ -69,7 +72,9 @@ header img:hover {
   filter: invert(91%) sepia(12%) saturate(7307%) hue-rotate(324deg)
     brightness(100%) contrast(98%);
 }
-
+header input::placeholder {
+  font-weight: bold;
+}
 /* Main */
 .catalog__group {
   display: flex;
