@@ -123,6 +123,9 @@ header input::placeholder {
   align-self: flex-end;
   padding: 0px 8px;
 }
+.item__title {
+  text-align: center;
+}
 .favorite-active .heart-outline {
   display: none;
 }
