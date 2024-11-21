@@ -1,6 +1,14 @@
-import "../css/style.css";
-import "../css/product_in.css";
-import "./app.js";
-import "./product_in.js";
+import "./css/style.css";
+import "./css/product_in.css";
 import "./favorite.js";
-import "./filter.js";
+import "./main.js";
+import "./render.js";
+import "./api.js";
+import "./debounce.js";
+import "./product_in.js";
+if (module.hot) {
+  module.hot.accept();
+}
+
+const app = document.getElementById("app");
+console.log("App initialized!");

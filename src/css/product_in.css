@@ -51,7 +51,7 @@ body {
   width: 100%;
 }
 .product__details {
-  display: flex;
+  /* display: flex; */
   font-weight: bold;
   line-height: 21px;
   font-size: 24px;
@@ -137,6 +137,10 @@ body {
 }
 .item__favorite {
   padding: 11px 10px 11px 16px;
+}
+.product__item {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 992px) {
