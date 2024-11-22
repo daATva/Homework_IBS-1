@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((data) => {
       console.log("Ответ API:", data);
       if (Array.isArray(data.content)) {
-        catalogData = data.content; // Сохраняем товары
+        catalogData = data.content;
         renderItems(catalogData);
       } else {
         console.error("Ожидался массив товаров, но получен:", data.content);
