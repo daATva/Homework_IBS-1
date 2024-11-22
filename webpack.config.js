@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -8,6 +9,7 @@ module.exports = {
     clean: true,
   },
   mode: "development",
+  target: "web",
   module: {
     rules: [
       {
@@ -17,6 +19,9 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
+        generator: {
+          filename: "assets/images/[name][ext]",
+        },
       },
       {
         test: /\.html$/,
@@ -24,9 +29,21 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+      filename: "index.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/product_in.html",
+      filename: "product_in.html",
+    }),
+  ],
   devServer: {
     static: "./dist",
     open: true,
-    port: 3000,
+    hot: true,
+    port: 3002,
+    historyApiFallback: true,
   },
 };
