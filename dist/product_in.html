@@ -1,192 +1,97 @@
-<head><script defer src="bundle.js"></script></head>Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module not found: Error: Can't resolve '../img/cart.svg' in 'C:\Users\79084\Desktop\IBS\Homework_IBS_2\src'
-  ModuleNotFoundError: Module not found: Error: Can't resolve '../img/cart.svg' in 'C:\Users\79084\Desktop\IBS\Homework_IBS_2\src'
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\Compilation.js:2022:28
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  Module not found: Error: Can't resolve '../img/user.svg' in 'C:\Users\79084\Desktop\IBS\Homework_IBS_2\src'
-  ModuleNotFoundError: Module not found: Error: Can't resolve '../img/user.svg' in 'C:\Users\79084\Desktop\IBS\Homework_IBS_2\src'
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\Compilation.js:2022:28
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  Module not found: Error: Can't resolve '../img/cart.svg' in 'C:\Users\79084\Desktop\IBS\Homework_IBS_2\src'
-  ModuleNotFoundError: Module not found: Error: Can't resolve '../img/cart.svg' in 'C:\Users\79084\Desktop\IBS\Homework_IBS_2\src'
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\Compilation.js:2022:28
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  Module not found: Error: Can't resolve '../img/user.svg' in 'C:\Users\79084\Desktop\IBS\Homework_IBS_2\src'
-  ModuleNotFoundError: Module not found: Error: Can't resolve '../img/user.svg' in 'C:\Users\79084\Desktop\IBS\Homework_IBS_2\src'
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\Compilation.js:2022:28
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  Module not found: Error: Can't resolve '../img/product.png' in 'C:\Users\79084\Desktop\IBS\Homework_IBS_2\src'
-  ModuleNotFoundError: Module not found: Error: Can't resolve '../img/product.png' in 'C:\Users\79084\Desktop\IBS\Homework_IBS_2\src'
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\Compilation.js:2022:28
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at C:\Users\79084\Desktop\IBS\Homework_IBS_2\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  
-  - Compilation.js:2022 
-    [Homework_IBS_2]/[webpack]/lib/Compilation.js:2022:28
-  
-  - NormalModuleFactory.js:817 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:817:13
-  
-  
-  - NormalModuleFactory.js:275 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:275:22
-  
-  
-  - NormalModuleFactory.js:448 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:448:22
-  
-  - NormalModuleFactory.js:118 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:118:11
-  
-  - NormalModuleFactory.js:689 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:689:25
-  
-  - NormalModuleFactory.js:893 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:893:8
-  
-  - NormalModuleFactory.js:1013 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:1013:5
-  
-  - Module not found: Error: Can't resolve '../img/user.svg' in 'C:\Users\79084\Desktop\IBS\Homework_IBS_2\src'
-  
-  - ModuleNotFoundError: Module not found: Error: Can't resolve '../img/user.svg' in 'C:\Users\79084\Desktop\IBS\Homework_IBS_2\src'
-  
-  - Compilation.js:2022 
-    [Homework_IBS_2]/[webpack]/lib/Compilation.js:2022:28
-  
-  - NormalModuleFactory.js:817 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:817:13
-  
-  
-  - NormalModuleFactory.js:275 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:275:22
-  
-  
-  - NormalModuleFactory.js:448 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:448:22
-  
-  - NormalModuleFactory.js:118 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:118:11
-  
-  - NormalModuleFactory.js:689 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:689:25
-  
-  - NormalModuleFactory.js:893 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:893:8
-  
-  - NormalModuleFactory.js:1013 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:1013:5
-  
-  - Module not found: Error: Can't resolve '../img/cart.svg' in 'C:\Users\79084\Desktop\IBS\Homework_IBS_2\src'
-  
-  - ModuleNotFoundError: Module not found: Error: Can't resolve '../img/cart.svg' in 'C:\Users\79084\Desktop\IBS\Homework_IBS_2\src'
-  
-  - Compilation.js:2022 
-    [Homework_IBS_2]/[webpack]/lib/Compilation.js:2022:28
-  
-  - NormalModuleFactory.js:817 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:817:13
-  
-  
-  - NormalModuleFactory.js:275 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:275:22
-  
-  
-  - NormalModuleFactory.js:448 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:448:22
-  
-  - NormalModuleFactory.js:118 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:118:11
-  
-  - NormalModuleFactory.js:689 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:689:25
-  
-  - NormalModuleFactory.js:893 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:893:8
-  
-  - NormalModuleFactory.js:1013 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:1013:5
-  
-  - Module not found: Error: Can't resolve '../img/user.svg' in 'C:\Users\79084\Desktop\IBS\Homework_IBS_2\src'
-  
-  - ModuleNotFoundError: Module not found: Error: Can't resolve '../img/user.svg' in 'C:\Users\79084\Desktop\IBS\Homework_IBS_2\src'
-  
-  - Compilation.js:2022 
-    [Homework_IBS_2]/[webpack]/lib/Compilation.js:2022:28
-  
-  - NormalModuleFactory.js:817 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:817:13
-  
-  
-  - NormalModuleFactory.js:275 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:275:22
-  
-  
-  - NormalModuleFactory.js:448 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:448:22
-  
-  - NormalModuleFactory.js:118 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:118:11
-  
-  - NormalModuleFactory.js:689 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:689:25
-  
-  - NormalModuleFactory.js:893 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:893:8
-  
-  - NormalModuleFactory.js:1013 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:1013:5
-  
-  - Module not found: Error: Can't resolve '../img/product.png' in 'C:\Users\79084\Desktop\IBS\Homework_IBS_2\src'
-  
-  - ModuleNotFoundError: Module not found: Error: Can't resolve '../img/product.png' in 'C:\Users\79084\Desktop\IBS\Homework_IBS_2\src'
-  
-  - Compilation.js:2022 
-    [Homework_IBS_2]/[webpack]/lib/Compilation.js:2022:28
-  
-  - NormalModuleFactory.js:817 
-    [Homework_IBS_2]/[webpack]/lib/NormalModuleFactory.js:817:13
-  
-  
-</pre>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog</title>
+    <link rel="stylesheet" href="72038951a562ea7dd9fb.css" />
+    <link rel="stylesheet" href="8b3653faf06cc8f3c67e.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  <script defer src="bundle.js"></script></head>
+  <body>
+    <header>
+      <div class="search__box">
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="#323232"
+          xmlns="http://www.w3.org/2000/svg"
+          class="header_search"
+        >
+          <path
+            d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z"
+            fill="#323232"
+          />
+        </svg>
+        <input placeholder="Search products" />
+      </div>
+      <div class="item__box">
+        <img src="assets/images/cart.svg" alt="Cart" class="header_cart" />
+        <img src="assets/images/user.svg" alt="Userpage" class="header_userpage" />
+      </div>
+    </header>
+    <main>
+      <div class="product__content">
+        <div class="product__preview">
+          <img src="assets/images/product.png" alt="Product" />
+        </div>
+        <div class="product__description">
+          <div class="product__title">G Home</div>
+          <div class="product__title_descr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            ultrices ante sit amet mollis luctus. Morbi semper, tellus in
+            finibus tristique, purus odio sodales sem, vitae dignissim enim
+            metus vel purus. Quisque a rutrum leo. Phasellus quis ex sed magna
+            finibus convallis varius luctus justo. Nullam et sapien vel magna
+            ultrices pulvinar. Nunc felis ante, lobortis eget imperdiet in,
+            iaculis at justo. Etiam libero nisl, hendrerit vitae ultricies
+            vitae, pharetra a est. Vivamus vestibulum quam sit amet facilisis
+            consequat. Curabitur sollicitudin arcu arcu, pretium aliquam nibh
+            hendrerit a. Donec diam massa, tempus sed pulvinar a, fermentum et
+            orci.
+          </div>
+          <div class="product__details">Details</div>
+          <div class="product__details_descr">
+            Nulla et mauris sed elit semper pretium a quis augue. Fusce tempus
+            est ex, eu porttitor nulla auctor et. Maecenas eget quam non risus
+            porta elementum. Pellentesque posuere augue in malesuada fermentum.
+            Maecenas vitae viverra mauris. Suspendisse a cursus libero.
+            Pellentesque vitae purus eget lectus lobortis laoreet sed
+            sollicitudin diam. Pellentesque pellentesque eu justo at
+            ullamcorper. Quisque quis egestas magna. Vestibulum et felis id nisi
+            dapibus viverra vel vitae nisl. Morbi lobortis nunc turpis, sed
+            tincidunt quam cursus nec. Morbi eget lorem dolor.
+          </div>
+          <div class="product__buy">
+            <div class="product__price">$129</div>
+            <div class="product__btns cart__group">
+              <button type="button" class="decrement">-</button>
+              <input type="number" value="1" min="1" id="quantity-input" />
+              <button type="button" class="increment">+</button>
+            </div>
+            <button class="product__cart cart__group">Add to cart</button>
+            <svg
+              width="20"
+              height="19"
+              viewBox="0 0 20 19"
+              fill="red"
+              xmlns="http://www.w3.org/2000/svg"
+              class="item__favorite"
+            >
+              <path
+                d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z"
+                fill="#959595"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="e7ff774883ddad357918.js" defer></script>
+  </body>
+</html>

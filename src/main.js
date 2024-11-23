@@ -20,7 +20,12 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((data) => {
       console.log("Ответ API:", data);
       if (Array.isArray(data.content)) {
-        catalogData = data.content;
+        const savedFavorites =
+          JSON.parse(localStorage.getItem("favorites")) || [];
+        catalogData = data.content.map((item) => {
+          const isFavorite = savedFavorites.some((fav) => fav.id === item.id);
+          return { ...item, like: isFavorite };
+        });
         renderItems(catalogData);
       } else {
         console.error("Ожидался массив товаров, но получен:", data.content);
@@ -34,7 +39,3 @@ document.addEventListener("DOMContentLoaded", function () {
     inputElement.addEventListener("input", debouncedSearch);
   }
 });
-
-function toggleFavorite(element) {
-  element.classList.toggle("favorite-active");
-}
