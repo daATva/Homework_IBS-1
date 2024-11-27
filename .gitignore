@@ -7,7 +7,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Webpack
-dist/                 # Папка сборки
+/dist                 # Папка сборки
 !.gitkeep             # Исключение для пустых папок
 
 # Editor и IDE
